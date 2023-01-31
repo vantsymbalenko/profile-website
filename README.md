@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Profile Website
+A React.js project using create-react-app with TypeScript, Storybook, Airbnb ESLint config, and an atomic approach to building components. This project is a profile website designed to make it easy for others to access a developer's information.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+1. Clone the repository:
 
-## Available Scripts
+```bash
+git clone https://github.com/[username]/[repo-name].git
+```
 
-In the project directory, you can run:
+2. Install dependencies:
 
-### `npm start`
+```bash 
+npm install 
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Run the development server:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm start
+```
 
-### `npm test`
+The app will be running on http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Storybook
+To run the Storybook server, run the following command:
 
-### `npm run build`
+```bash
+npm run storybook
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Storybook server will be running on http://localhost:6006.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Linting
+The project uses Airbnb's ESLint config. To run the linter, run the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run lint
+```
 
-### `npm run eject`
+## Build
+To build the production version of the app, run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The built files will be in the build directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Atomic Approach to Component Design
+This project uses an atomic approach to designing components, where components are broken down into small, reusable pieces.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Shared Components Library
+The `library` folder contains shared components that are not specific to this project and can be easily moved to a separate project. These components are meant to be used as a library of reusable components for other projects.
