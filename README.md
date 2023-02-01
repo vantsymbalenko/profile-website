@@ -7,7 +7,7 @@ A React.js project using create-react-app with TypeScript, Storybook, Airbnb ESL
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/[username]/[repo-name].git
+git clone git@github.com:vantsymbalenko/profile-website.git
 ```
 
 2. Install dependencies:
