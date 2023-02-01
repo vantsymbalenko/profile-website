@@ -7,8 +7,8 @@ import { defaultTheme } from '../../config/theme/defaultTheme';
 import { ThemeProps } from './types';
 
 export const ThemeProvider: FC<ThemeProps> = ({ theme = defaultTheme, children }) => (
-  <StyledThemeProvider theme={theme}>
-    <Normalize />
-    {children}
-  </StyledThemeProvider>
+	<StyledThemeProvider theme={theme}>
+		<Normalize />
+		{children}
+	</StyledThemeProvider>
 );

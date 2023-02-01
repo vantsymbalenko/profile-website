@@ -7,4 +7,4 @@ export default {
 
 const Template = () => <Card />;
 
-export const Default = { args: {} };
+export const Default = Template.bind({});
