@@ -1,0 +1,35 @@
+import styled from 'styled-components';
+
+import mainBgSrc from '../../../../../../assets/mainBg.png';
+import { Card } from '../../../../../library/components/Card';
+
+export const BackgroundImage = styled.div`
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: -18px;
+	left: -18px;
+	right: -18px;
+	bottom: -18px;
+	background-image: url(${mainBgSrc});
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: calc(50%) calc(50%);
+`;
+
+export const Container = styled.div`
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+export const Section = styled(Card)`
+	max-width: 1320px;
+	width: 100%;
+	border-radius: 0;
+	@media screen and (min-width: ${(p) => p.theme.breakpoints.tablet}) {
+		border-radius: 40px;
+	}
+`;

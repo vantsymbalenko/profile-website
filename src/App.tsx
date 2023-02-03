@@ -1,8 +1,19 @@
-import React from 'react';
-import { RouterProvider } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import { router } from './pages';
+import { GlobalStyles } from './components/app/components/GlobalStyles';
+import { PageWrapper } from './components/app/components/wrappers/PageWrapper';
+import { ThemeProvider } from './components/library/components';
+import { Router } from './pages';
 
-const App = () => <RouterProvider router={router} />;
+const App = () => (
+	<ThemeProvider>
+		<GlobalStyles />
+		<BrowserRouter>
+			<PageWrapper>
+				<Router />
+			</PageWrapper>
+		</BrowserRouter>
+	</ThemeProvider>
+);
 
 export default App;

@@ -13,5 +13,8 @@ declare module 'styled-components' {
 		shadows: {
 			primary: string;
 		};
+		breakpoints: {
+			tablet: string;
+		};
 	}
 }

@@ -7,4 +7,5 @@ export const Card = styled.section`
 	border-radius: 40px;
 	box-shadow: ${(props) => props.theme.shadows.primary};
 	overflow: hidden;
+	background-color: ${(p) => p.theme.background.secondary};
 `;

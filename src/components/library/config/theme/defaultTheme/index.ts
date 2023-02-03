@@ -22,4 +22,7 @@ export const defaultTheme: DefaultTheme = {
 	shadows: {
 		primary: SHADOWS_TOKENS.black20,
 	},
+	breakpoints: {
+		tablet: '760px',
+	},
 };
