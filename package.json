@@ -1,6 +1,7 @@
 {
 	"name": "profile-website",
 	"version": "0.1.0",
+	"homepage": "https://vantsymbalenko.github.io/profile-website",
 	"private": true,
 	"scripts": {
 		"start": "react-scripts start",
@@ -11,7 +12,8 @@
 		"pretty": "prettier --ignore-unknown --write",
 		"storybook": "start-storybook -p 6006 -s public",
 		"build-storybook": "build-storybook -s public",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -52,6 +54,7 @@
 		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"gh-pages": "^5.0.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.1.0",
 		"prettier": "^2.8.3",

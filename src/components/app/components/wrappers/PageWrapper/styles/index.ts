@@ -15,14 +15,17 @@ export const BackgroundImage = styled.div`
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: calc(50%) calc(50%);
+	z-index: 1;
 `;
 
 export const Container = styled.div`
+	position: relative;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 2;
 `;
 
 export const Section = styled(Card)`
