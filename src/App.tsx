@@ -8,7 +8,7 @@ import { Router } from './pages';
 const App = () => (
 	<ThemeProvider>
 		<GlobalStyles />
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.REACT_APP_BASE_NAME}>
 			<PageWrapper>
 				<Router />
 			</PageWrapper>
