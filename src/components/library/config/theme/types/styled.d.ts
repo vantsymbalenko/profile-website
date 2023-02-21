@@ -16,5 +16,9 @@ declare module 'styled-components' {
 		breakpoints: {
 			tablet: string;
 		};
+		fontSize: {
+			s: string;
+			m: string;
+		};
 	}
 }

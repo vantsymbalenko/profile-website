@@ -10,6 +10,11 @@ const SHADOWS_TOKENS = {
 	black20: '0 0 40px -10px rgb(0 0 0 / 20%)',
 };
 
+const TEXT_SIZES = {
+	small: '13px',
+	regular: '14px',
+};
+
 export const defaultTheme: DefaultTheme = {
 	colors: {
 		primary: COLOR_TOKENS.gray50,
@@ -24,5 +29,9 @@ export const defaultTheme: DefaultTheme = {
 	},
 	breakpoints: {
 		tablet: '760px',
+	},
+	fontSize: {
+		s: TEXT_SIZES.small,
+		m: TEXT_SIZES.regular,
 	},
 };
