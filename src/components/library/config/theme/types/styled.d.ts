@@ -5,6 +5,8 @@ declare module 'styled-components' {
 		colors: {
 			primary: string;
 			secondary: string;
+			tetriary: string;
+			info: string;
 		};
 		background: {
 			primary: string;
@@ -19,6 +21,10 @@ declare module 'styled-components' {
 		fontSize: {
 			s: string;
 			m: string;
+			xl: string;
+		};
+		fontFamily: {
+			primary: string;
 		};
 	}
 }

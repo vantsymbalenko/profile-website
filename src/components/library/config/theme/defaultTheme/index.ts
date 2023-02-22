@@ -3,7 +3,9 @@ import { DefaultTheme } from 'styled-components';
 const COLOR_TOKENS = {
 	blue50: '#007ced',
 	white0: '#ffffff',
+	gray30: '#666666',
 	gray50: '#333333',
+	gray60: '#222222',
 };
 
 const SHADOWS_TOKENS = {
@@ -13,12 +15,15 @@ const SHADOWS_TOKENS = {
 const TEXT_SIZES = {
 	small: '13px',
 	regular: '14px',
+	xLarge: '20px',
 };
 
 export const defaultTheme: DefaultTheme = {
 	colors: {
 		primary: COLOR_TOKENS.gray50,
 		secondary: COLOR_TOKENS.white0,
+		tetriary: COLOR_TOKENS.gray60,
+		info: COLOR_TOKENS.gray30,
 	},
 	background: {
 		primary: COLOR_TOKENS.blue50,
@@ -33,5 +38,9 @@ export const defaultTheme: DefaultTheme = {
 	fontSize: {
 		s: TEXT_SIZES.small,
 		m: TEXT_SIZES.regular,
+		xl: TEXT_SIZES.xLarge,
+	},
+	fontFamily: {
+		primary: "'Poppins', sans-serif",
 	},
 };

@@ -32,6 +32,7 @@ export const Section = styled(Card)`
 	max-width: 1320px;
 	width: 100%;
 	border-radius: 0;
+	box-sizing: border-box;
 	@media screen and (min-width: ${(p) => p.theme.breakpoints.tablet}) {
 		border-radius: 40px;
 	}
