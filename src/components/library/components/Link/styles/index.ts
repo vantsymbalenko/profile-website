@@ -21,6 +21,7 @@ export const StyledLink = styled.a<StyledLinkProps>`
 	font-style: normal;
 	cursor: pointer;
 	color: ${(p) => p.theme.colors.primary};
+	font-family: ${(p) => p.theme.fontFamily.primary};
 	${(p) => (p.variant ? VARIANTS[p.variant] : VARIANTS.link)};
 	transition: all 0.3s ease-in-out;
 	&:hover {

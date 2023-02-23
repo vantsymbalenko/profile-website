@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 
 import { Link } from '../../../../../library/components/Link';
-import { Typography } from '../../../../../library/components/Typography';
 
 import { NavList } from './styles';
 
@@ -9,18 +8,18 @@ export const Navigation: FC = () => (
 	<nav>
 		<NavList>
 			<li>
-				<Link withActiveState to="/">
-					<Typography as="span">Home</Typography>
+				<Link withActiveState to="/" variant="nav-link">
+					Home
 				</Link>
 			</li>
 			<li>
-				<Link withActiveState to="/resume">
-					<Typography as="span">Resume</Typography>
+				<Link withActiveState to="/resume" variant="nav-link">
+					Resume
 				</Link>
 			</li>
 			<li>
-				<Link withActiveState to="/contacts">
-					<Typography as="span">Contacts</Typography>
+				<Link withActiveState to="/contacts" variant="nav-link">
+					Contacts
 				</Link>
 			</li>
 		</NavList>

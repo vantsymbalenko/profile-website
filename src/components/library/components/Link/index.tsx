@@ -6,6 +6,8 @@ import {
 	NavLinkProps,
 } from 'react-router-dom';
 
+import { PartialBy } from '../../types/utils';
+
 import { StyledLink } from './styles';
 
 type OwnProps = {
@@ -14,14 +16,14 @@ type OwnProps = {
 };
 
 type LinkProps = PropsWithChildren &
-	NavLinkProps &
-	RouterLinkProps &
+	PartialBy<NavLinkProps, 'to'> &
+	PartialBy<RouterLinkProps, 'to'> &
 	ComponentPropsWithoutRef<'a'> &
 	OwnProps;
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
 	({ withActiveState, to, href, children, variant }, ref) => {
-		if (withActiveState) {
+		if (withActiveState && to) {
 			return (
 				<StyledLink as={NavLink} to={to} variant={variant} ref={ref}>
 					{children}

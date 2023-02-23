@@ -3,6 +3,8 @@ import { DefaultTheme } from 'styled-components';
 const COLOR_TOKENS = {
 	blue50: '#007ced',
 	white0: '#ffffff',
+	gray10: '#fcfcfc',
+	gray20: '#f2f2f2',
 	gray30: '#666666',
 	gray50: '#333333',
 	gray60: '#222222',
@@ -28,6 +30,7 @@ export const defaultTheme: DefaultTheme = {
 	background: {
 		primary: COLOR_TOKENS.blue50,
 		secondary: COLOR_TOKENS.white0,
+		tetriary: COLOR_TOKENS.gray10,
 	},
 	shadows: {
 		primary: SHADOWS_TOKENS.black20,
@@ -42,5 +45,8 @@ export const defaultTheme: DefaultTheme = {
 	},
 	fontFamily: {
 		primary: "'Poppins', sans-serif",
+	},
+	border: {
+		light: `2px solid ${COLOR_TOKENS.gray20}`,
 	},
 };

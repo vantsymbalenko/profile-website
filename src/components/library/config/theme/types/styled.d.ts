@@ -11,6 +11,7 @@ declare module 'styled-components' {
 		background: {
 			primary: string;
 			secondary: string;
+			tetriary: string;
 		};
 		shadows: {
 			primary: string;
@@ -25,6 +26,9 @@ declare module 'styled-components' {
 		};
 		fontFamily: {
 			primary: string;
+		};
+		border: {
+			light: string;
 		};
 	}
 }
