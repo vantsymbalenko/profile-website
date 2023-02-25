@@ -7,10 +7,17 @@ const VARIANTS = {
 		color: ${(p) => p.theme.colors.tetriary};
 		font-family: ${(p) => p.theme.fontFamily.primary};
 	`,
+	'title-main': css`
+		font-size: ${(p) => p.theme.fontSize.xxl};
+		color: ${(p) => p.theme.colors.tetriary};
+		line-height: 56px;
+		font-family: ${(p) => p.theme.fontFamily.primary};
+	`,
 	'body-primary': css`
 		font-size: ${(p) => p.theme.fontSize.m};
 		color: ${(p) => p.theme.colors.info};
 		font-family: ${(p) => p.theme.fontFamily.primary};
+		line-height: 1.75em;
 	`,
 };
 
@@ -27,7 +34,7 @@ const FONT_STYLE = {
 };
 
 type TypographyProps = {
-	variant?: 'title-secondary';
+	variant?: 'title-secondary' | 'title-main' | 'body-primary';
 	weight?: 'regular' | 'bold' | 'bolder';
 };
 

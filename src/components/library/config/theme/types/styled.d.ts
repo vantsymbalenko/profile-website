@@ -23,6 +23,7 @@ declare module 'styled-components' {
 			s: string;
 			m: string;
 			xl: string;
+			xxl: string;
 		};
 		fontFamily: {
 			primary: string;

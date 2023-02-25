@@ -18,6 +18,7 @@ const TEXT_SIZES = {
 	small: '13px',
 	regular: '14px',
 	xLarge: '20px',
+	xxLarge: '48px',
 };
 
 export const defaultTheme: DefaultTheme = {
@@ -42,6 +43,7 @@ export const defaultTheme: DefaultTheme = {
 		s: TEXT_SIZES.small,
 		m: TEXT_SIZES.regular,
 		xl: TEXT_SIZES.xLarge,
+		xxl: TEXT_SIZES.xxLarge,
 	},
 	fontFamily: {
 		primary: "'Poppins', sans-serif",
