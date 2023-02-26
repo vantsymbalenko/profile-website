@@ -7,6 +7,7 @@ declare module 'styled-components' {
 			secondary: string;
 			tetriary: string;
 			info: string;
+			side: string;
 		};
 		background: {
 			primary: string;
@@ -30,6 +31,7 @@ declare module 'styled-components' {
 		};
 		border: {
 			light: string;
+			regular: string;
 		};
 	}
 }

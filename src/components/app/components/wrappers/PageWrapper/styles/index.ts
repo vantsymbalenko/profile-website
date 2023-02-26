@@ -21,13 +21,13 @@ export const BackgroundImage = styled.div`
 export const Container = styled.div`
 	position: relative;
 	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 2;
 	overflow: auto;
 	height: auto;
+	min-height: 100vh;
 `;
 
 export const Section = styled(Card)`

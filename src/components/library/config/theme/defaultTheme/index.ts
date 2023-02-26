@@ -3,11 +3,13 @@ import { DefaultTheme } from 'styled-components';
 const COLOR_TOKENS = {
 	blue50: '#007ced',
 	white0: '#ffffff',
-	gray10: '#fcfcfc',
-	gray20: '#f2f2f2',
-	gray30: '#666666',
-	gray50: '#333333',
-	gray60: '#222222',
+	gray20: '#fcfcfc',
+	gray30: '#f2f2f2',
+	gray40: '#eeeeee',
+	gray50: '#aaaaaa',
+	gray60: '#666666',
+	gray70: '#333333',
+	gray80: '#222222',
 };
 
 const SHADOWS_TOKENS = {
@@ -23,15 +25,16 @@ const TEXT_SIZES = {
 
 export const defaultTheme: DefaultTheme = {
 	colors: {
-		primary: COLOR_TOKENS.gray50,
+		primary: COLOR_TOKENS.gray70,
 		secondary: COLOR_TOKENS.white0,
-		tetriary: COLOR_TOKENS.gray60,
-		info: COLOR_TOKENS.gray30,
+		tetriary: COLOR_TOKENS.gray80,
+		info: COLOR_TOKENS.gray60,
+		side: COLOR_TOKENS.gray50,
 	},
 	background: {
 		primary: COLOR_TOKENS.blue50,
 		secondary: COLOR_TOKENS.white0,
-		tetriary: COLOR_TOKENS.gray10,
+		tetriary: COLOR_TOKENS.gray20,
 	},
 	shadows: {
 		primary: SHADOWS_TOKENS.black20,
@@ -49,6 +52,7 @@ export const defaultTheme: DefaultTheme = {
 		primary: "'Poppins', sans-serif",
 	},
 	border: {
-		light: `2px solid ${COLOR_TOKENS.gray20}`,
+		light: `2px solid ${COLOR_TOKENS.gray30}`,
+		regular: `2px solid ${COLOR_TOKENS.gray40}`,
 	},
 };

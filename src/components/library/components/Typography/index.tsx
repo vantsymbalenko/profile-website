@@ -1,5 +1,11 @@
 import styled, { css } from 'styled-components';
 
+const bodyStyles = css`
+	font-size: ${(p) => p.theme.fontSize.m};
+	font-family: ${(p) => p.theme.fontFamily.primary};
+	line-height: 1.75em;
+`;
+
 const VARIANTS = {
 	'title-secondary': css`
 		font-size: ${(p) => p.theme.fontSize.xl};
@@ -14,10 +20,12 @@ const VARIANTS = {
 		font-family: ${(p) => p.theme.fontFamily.primary};
 	`,
 	'body-primary': css`
-		font-size: ${(p) => p.theme.fontSize.m};
+		${bodyStyles};
 		color: ${(p) => p.theme.colors.info};
-		font-family: ${(p) => p.theme.fontFamily.primary};
-		line-height: 1.75em;
+	`,
+	'body-secondary': css`
+		${bodyStyles};
+		color: ${(p) => p.theme.colors.side};
 	`,
 };
 
@@ -34,7 +42,7 @@ const FONT_STYLE = {
 };
 
 type TypographyProps = {
-	variant?: 'title-secondary' | 'title-main' | 'body-primary';
+	variant?: 'title-secondary' | 'title-main' | 'body-primary' | 'body-secondary';
 	weight?: 'regular' | 'bold' | 'bolder';
 };
 

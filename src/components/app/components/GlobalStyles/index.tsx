@@ -14,4 +14,9 @@ export const GlobalStyles = createGlobalStyle`
 		min-height: 100vh;
 		background-color: ${(p) => p.theme.background.primary};
 	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
 `;
