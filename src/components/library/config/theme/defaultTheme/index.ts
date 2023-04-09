@@ -19,6 +19,7 @@ const SHADOWS_TOKENS = {
 const TEXT_SIZES = {
 	small: '13px',
 	regular: '14px',
+	medium: '16px',
 	xLarge: '20px',
 	xxLarge: '48px',
 };
@@ -35,6 +36,7 @@ export const defaultTheme: DefaultTheme = {
 		primary: COLOR_TOKENS.blue50,
 		secondary: COLOR_TOKENS.white0,
 		tetriary: COLOR_TOKENS.gray20,
+		aside: COLOR_TOKENS.gray40,
 	},
 	shadows: {
 		primary: SHADOWS_TOKENS.black20,
@@ -45,6 +47,7 @@ export const defaultTheme: DefaultTheme = {
 	fontSize: {
 		s: TEXT_SIZES.small,
 		m: TEXT_SIZES.regular,
+		ms: TEXT_SIZES.medium,
 		xl: TEXT_SIZES.xLarge,
 		xxl: TEXT_SIZES.xxLarge,
 	},
@@ -54,5 +57,6 @@ export const defaultTheme: DefaultTheme = {
 	border: {
 		light: `2px solid ${COLOR_TOKENS.gray30}`,
 		regular: `2px solid ${COLOR_TOKENS.gray40}`,
+		heavy: `2px solid ${COLOR_TOKENS.gray60}`,
 	},
 };

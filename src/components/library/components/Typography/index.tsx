@@ -19,6 +19,12 @@ const VARIANTS = {
 		line-height: 56px;
 		font-family: ${(p) => p.theme.fontFamily.primary};
 	`,
+	'title-info': css`
+		font-size: ${(p) => p.theme.fontSize.ms};
+		line-height: '18px';
+		font-family: ${(p) => p.theme.fontFamily.primary};
+		color: ${(p) => p.theme.colors.primary};
+	`,
 	'body-primary': css`
 		${bodyStyles};
 		color: ${(p) => p.theme.colors.info};
@@ -42,7 +48,7 @@ const FONT_STYLE = {
 };
 
 type TypographyProps = {
-	variant?: 'title-secondary' | 'title-main' | 'body-primary' | 'body-secondary';
+	variant?: 'title-secondary' | 'title-main' | 'title-info' | 'body-primary' | 'body-secondary';
 	weight?: 'regular' | 'bold' | 'bolder';
 };
 

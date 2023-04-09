@@ -13,6 +13,7 @@ declare module 'styled-components' {
 			primary: string;
 			secondary: string;
 			tetriary: string;
+			aside: string;
 		};
 		shadows: {
 			primary: string;
@@ -23,6 +24,7 @@ declare module 'styled-components' {
 		fontSize: {
 			s: string;
 			m: string;
+			ms: string;
 			xl: string;
 			xxl: string;
 		};
@@ -32,6 +34,7 @@ declare module 'styled-components' {
 		border: {
 			light: string;
 			regular: string;
+			heavy: string;
 		};
 	}
 }
