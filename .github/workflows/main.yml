@@ -20,7 +20,5 @@ jobs:
     needs: setVersion
     steps:
       - name: Debug CURRENT_VERSION in release
-        env:
-          VERSION: ${{ needs.setVersion.outputs.CURRENT_VERSION }}
-        run: echo "CURRENT_VERSION is $VERSION"
+        run: echo "CURRENT_VERSION is ${{ needs.setVersion.outputs.CURRENT_VERSION }}"
 
