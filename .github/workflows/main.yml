@@ -1,6 +1,10 @@
 name: Release and deploy
 
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+      - vantsymbalenko-patch-1
+  workflow_dispatch:
 
 jobs:
   setVersion: 
